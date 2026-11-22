@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator</title>
+
+    <style>
+        /* General sibling */
+        h2~p {
+            color: red;
+        }
+
+        /* child combinator */
+        .cont>p {
+            background-color: teal;
+        }
+
+        h3 {
+            color: green;
+        }
+
+        /* decendant combinator */
+        #two h3 {
+            background-color: orange;
+        }
+
+        #two>h3 {
+            border: 5px solid pink;
+        }
+
+        /* Adjacent sibling */
+        span+h3 {
+            font-size: 40px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        h4+span {
+            color: aqua;
+        }
+
+        p+div>h4 {
+            color: aqua;
+        }
+
+        p+p {
+            border: 10px dotted blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cont">
+        <h1>one</h1>
+        <div id="two">
+            <p>three</p>
+            <span>four</span>
+            <h3>five</h3>
+        </div>
+        <h2>six</h2>
+        <h4 class="head">seven</h4>
+        <h2>eight</h2>
+        <p>nine</p>
+        <p>ten</p>
+        <div>
+            <h4>eleven</h4>
+            <span>tweleve</span>
+            <p>para</p>
+            <h2>h2</h2>
+        </div>
+    </div>
+</body>
+
+</html>

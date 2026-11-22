@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Element</title>
+    <!--specific text/content apply property
+    syntax::
+    -->
+    <style>
+        p::before {
+            content: "";
+        }
+
+        p::after {
+            content: "";
+        }
+
+        h5::first-line {
+            color: red;
+        }
+
+        h5::first-letter {
+            font-size: 50px;
+            color: green;
+        }
+
+        li::marker {
+            color: red;
+        }
+
+        input::placeholder {
+            color: red;
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Honesty is best policy</p>
+    <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error quas distinctio aperiam voluptatem fuga
+        repellendus, perspiciatis neque totam nihil provident vero officia animi laudantium rerum, blanditiis quisquam
+        odit, dolorem autem?</h5>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    <input type="text" placeholder="Shaktiman">
+</body>
+
+</html>

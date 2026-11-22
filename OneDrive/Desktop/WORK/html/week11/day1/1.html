@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform</title>
+    <style>
+        .parent{
+            width:200px;
+            height:200px;
+            background-color: red;
+            position: relative;
+        }
+
+        .child{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            /* transform: rotate(120deg); */
+            /* transform: scale(); */
+            /* transform:skew(60deg); */
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            transform: translate(50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">Hello world</div>
+    </div>
+</body>
+</html>

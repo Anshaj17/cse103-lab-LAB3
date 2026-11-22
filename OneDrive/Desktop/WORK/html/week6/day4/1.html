@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Students registration form</h1>
+    <form action="">
+        <p>name: <input type="text" name="name"></p>
+        <p>email: <input type="email" name="email"></p>
+        <p>password: <input type="password" name="password"></p>
+        
+        <p> age: <input type="number" name="age"></p>
+        <p>Dob: <input type="date" name="dob"></p>
+
+        <p>gender:
+            male<input type="radio" name="gender" id="male">
+            female<input type="radio" name="gender" id="female">
+        </p>
+        <p>language:
+            <select name="language" id="language">
+                <option value="">--select a language--</option>
+                <option value="hindi">Hindi</option>
+                <option value="english">English</option>
+                <option value="html">HTML</option>
+            </select>
+        </p>
+        <p>course:
+            <select name="course" id="course">
+                <option value="">--select a course--</option>
+                <option value="python">Python</option>
+                <option value="java">Java</option>
+                <option value="javascript">JavaScript</option>
+            </select>
+        </p>
+        <p>
+            summary: <textarea name="summary" id="summary" cols="30" rows="10"></textarea>
+        </p>
+        <input type="submit" value="submit">
+
+</body>
+</html>

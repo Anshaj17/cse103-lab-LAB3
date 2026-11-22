@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-gap: 20px;
+            grid-template-areas:
+                "header"
+                "profile"
+                "about"
+                "projects"
+                "contact";
+        }
+        .cont {
+            background-color: #f2f2f2;
+            padding: 20px;
+            text-align: center;
+        }
+        .cont h1 {
+            margin: 0;
+        }
+        .cont div {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        .profile {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .profile-pic img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+        .about, .projects, .contact-us {
+            padding: 20px;
+        }
+        .contact-info {
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <h1>My Portfolio</h1>
+        <div>Home</div>
+        <div>About</div>
+        <div>Projects</div>
+        <div>Contact us</div>
+    </div>
+    <div class="profile">
+        <div class="profile-pic">
+            <img src="C:\Users\jena8\OneDrive\Desktop\WORK\html\hw\IMG_20250809_111854 1.jpg" alt="Profile Picture">
+        </div>
+    </div>
+    <div class="about">
+        <h2>About Me</h2>
+        <p>Hello! everyone I am Anshuman Jena, a beginner in web development.currently, I am working on improving my skills in HTML, CSS, and JavaScript.</p>
+    </div>
+    <div class="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>Project 1</li>
+            <li>Project 2</li>
+            <li>Project 3</li>
+        </ul>
+    </div>
+    <div class="contact us">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            Phone Number: <textarea class="phone no" input="textarea"></textarea>
+            Email: <textarea class="email" input="textarea"></textarea>
+            <button type="submit" value="submit">submit</button>
+        </div>
+</div>
+</body>
+</html>

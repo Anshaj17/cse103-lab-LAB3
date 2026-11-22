@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+
+    <style>
+        .cont {
+            border: 1px solid red;
+
+            display: grid;
+
+            /* grid-template-columns: 100px 200px 300px;
+            grid-template-rows: 50px 100px; */
+            /* grid-template-columns: repeat(3, 1fr); */
+            gap: 10px;
+            grid-template-areas: "one one three"
+            "four five three"
+            "four eight eight";
+        }
+
+        .cont>div {
+            padding: 20px;
+        }
+
+        #one {
+            background-color: brown;
+            /* grid-area: 1/1/3/2; */
+            grid-area: one;
+        }
+
+        #two {
+            background-color: burlywood;
+            grid-area: two;
+        }
+
+        #three {
+            background-color: pink;
+            grid-area: three;
+        }
+
+        #four {
+            background-color: magenta;
+            grid-area: four;
+        }
+
+        #five {
+            background-color: goldenrod;
+            /* grid-area: 2/2/3/4; */
+            grid-area: five;
+        }
+
+        #six {
+            background-color: blue;
+            grid-area: six;
+        }
+
+        #seven {
+            background-color: orange;
+            grid-area: seven;
+        }
+
+        #eight {
+            background-color: green;
+            grid-area: eight;
+        }
+
+        #nine {
+            background-color: aqua;
+            grid-area: nine;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cont">
+        <div id="one">1</div>
+        <!-- <div id="two">2</div> -->
+        <div id="three">3</div>
+        <div id="four">4</div>
+        <div id="five">5</div>
+        <!-- <div id="six">6</div> -->
+        <!-- <div id="seven">7</div> -->
+        <div id="eight">8</div>
+        <!-- <div id="nine">9</div> -->
+    </div>
+</body>
+
+</html>
